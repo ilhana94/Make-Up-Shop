@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    background-image: url(360_F_238040002_oAUAwR0HAALRZzECXkzG024U1DKHfk6J.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: rgba(255, 20, 145, 0.586);
+    padding: 30px 0;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
+}
+
+header h1 {
+    background-color: deeppink;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header nav .nav-link {
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    transition: color 0.3s ease;
+}
+
+header nav .nav-link:hover {
+    color: #ffc107;
+    text-decoration: underline;
+}
+header nav .dropdown-menu {
+    background-color: #ff69b4;
+}
+header nav .dropdown-item {
+    color: white;
+    font-size: 1rem;
+}
+
+header nav .dropdown-item:hover {
+    background-color: #ff1493;
+    color: #fff;
+}
+.product {
+    background: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); 
+}
+
+.product h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    color: #555;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+section {
+    margin-bottom: 50px;
+}
+
+#newsletter form .form-label {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+#newsletter button {
+    background-color: #f046bb;
+    color: white;
+    border: none;
+    font-size: 1rem;
+}
+
+#newsletter button:hover {
+    background-color: #f046bb;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+.dropdown-menu .product {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
