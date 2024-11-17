@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Up Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class=" text-white py-4">
+        <div class="container"></div>
+        <a href="index.html">
+            <h1>Make Up Shop</h1>
+            </a>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="customerexperince.html">Customer Experience</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="newsellers.html">Newsletter</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+            </ul>
+        </nav>
+    </header>
+
+  
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f5f5f5;
+                color: #333;
+            }
+            header {
+                background-color: #1c1c1c;
+                color: #fff;
+                text-align: center;
+                padding: 2rem;
+            }
+            .products-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 2rem;
+                padding: 2rem;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            .product-card {
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                padding: 1rem;
+                text-align: center;
+                transition: transform 0.3s ease-in-out;
+            }
+            .product-card:hover {
+                transform: translateY(-10px);
+            }
+            .product-card img {
+                width: 100%;
+                height: 250px;
+                object-fit: contain;
+                margin-bottom: 1rem;
+                border-radius: 8px;
+            }
+            .product-card h3 {
+                font-size: 20px;
+                color: #333;
+                margin-bottom: 0.5rem;
+            }
+            .product-card p {
+                font-size: 16px;
+                color: #777;
+                margin-bottom: 1rem;
+            }
+            .product-card .price {
+                font-size: 18px;
+                font-weight: bold;
+                color: #D56C9F;
+                margin-bottom: 1rem;
+            }
+            .product-card button {
+                background-color: #D56C9F;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+            .product-card button:hover {
+                background-color: #B3567F;
+            }
+            .filters {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 2rem;
+            }
+            .filters select {
+                padding: 10px;
+                font-size: 16px;
+                border-radius: 5px;
+                border: 1px solid #ddd;
+                background-color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+
+    
+     
+        <div class="filters">
+            <select id="category" onchange="filterProducts()">
+                <option value="all">All categories</option>
+                <option value="lipsticks">Lipstick</option>
+                <option value="foundations">Foundation</option>
+                <option value="palettes">Eyeshadow paletts</option>
+                <option value="highlighters">Highlighters</option>
+                <option value="contures">Contures</option>
+
+            </select>
+    
+            <select id="price" onchange="filterProducts()">
+                <option value="all">All price ranges</option>
+                <option value="low">Up to 200 KM</option>
+                <option value="medium">200 - 500 KM</option>
+                <option value="high">Over 500 KM</option>
+            </select>
+        </div>
+    
+        <div class="products-container">
+        
+            <div class="product-card" data-category="lipsticks" data-price="medium">
+                <img src="lipstick.jpg" alt="Luxury Lipstick">
+                <h3>Luxury Lipstick</h3>
+                <p>The perfect shade that lasts all day!</p>
+                <div class="price">350 KM</div>
+                <button onclick="addToCart('Luxury Lipstick', 350)">Add to cart</button>
+            </div>
+    
+        
+            <div class="product-card" data-category="foundations" data-price="high">
+                <img src="Dior-1280x720.webp" alt="Glow Foundation">
+                <h3>Glow Foundation</h3>
+                <p>Achieve a flawless look with a natural finish.</p>
+                <div class="price">650 KM</div>
+                <button onclick="addToCart('Glow Foundation', 650)">Add to cart</button>
+            </div>
+    
+          
+            <div class="product-card" data-category="palettes" data-price="low">
+                <img src="16.jpg" alt="Perfect Eyeshadow Palette">
+                <h3>Perfect Eyeshadow Palette</h3>
+                <p>16 beautiful colors for every look!</p>
+                <div class="price">180 KM</div>
+                <button onclick="addToCart('Perfect Eyeshadow Palette', 180)">Add to cart</button>
+            </div>
+    
+           
+            <div class="product-card" data-category="lipsticks" data-price="high">
+                <img src="MUA-velvet-matte2_1080x.webp" alt="Velvet Matte Lipstick">
+                <h3>Velvet Matte Lipstick</h3>
+                <p>Matte texture with a luxurious finish.</p>
+                <div class="price">450 KM</div>
+                <button onclick="addToCart('Velvet Matte Lipstick', 450)">Add to cart</button>
+            </div>
+        </div>
+
+    
+        <script>
+            function addToCart(productName, price) {
+                alert(`${productName} je dodan u vašu košaricu! Cijena: ${price} HRK`);
+                // Ovdje možete dodati kod za dodavanje u košaricu
+            }
+    
+            function filterProducts() {
+                const categoryFilter = document.getElementById('category').value;
+                const priceFilter = document.getElementById('price').value;
+                const products = document.querySelectorAll('.product-card');
+    
+                products.forEach(product => {
+                    const productCategory = product.getAttribute('data-category');
+                    const productPrice = product.getAttribute('data-price');
+                    let showProduct = true;
+    
+                    if (categoryFilter !== 'all' && productCategory !== categoryFilter) {
+                        showProduct = false;
+                    }
+    
+                    if (priceFilter !== 'all' && productPrice !== priceFilter) {
+                        showProduct = false;
+                    }
+    
+                    if (showProduct) {
+                        product.style.display = 'block';
+                    } else {
+                        product.style.display = 'none';
+                    }
+                });
+            }
+        </script>
+    </body>
+    </html>
+
+    
+    <footer class="bg-dark text-white py-3 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2024 Make Up Shop. All rights reserved.</p>
+        </div>
+    </footer>
+    

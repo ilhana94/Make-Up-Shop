@@ -8,29 +8,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="bg-primary text-white py-4">
+    <header class=" text-white py-4">
         <div class="container"></div>
-        <h1 class="nav justify-content-center">Dobrodošli u naš Make Up Shop!</h1>
+
         <nav>
             <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link text-white" href="#about">O nama</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#products">Proizvodi</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#testimonials">Iskustva kupaca</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#newsletter">Newsletter</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#contact">Kontakt</a></li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Više
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#about">O nama</a></li>
-                        <li><a class="dropdown-item" href="#products">Proizvodi</a></li>
-                        <li><a class="dropdown-item" href="#testimonials">Iskustva</a></li>
-                        <li><a class="dropdown-item" href="#newsletter">Newsletter</a></li>
-                        <li><a class="dropdown-item" href="#contact">Kontakt</a></li>
-                    </ul>
-                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="customerexperince.html">Customer Experience</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="newsellers.html">Newsletter</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -39,90 +26,181 @@
         </nav>
     </header>
 
-    <hr>
-    <div class="container mt-5">
-    <section id="about">
-        <h2>O nama</h2>
-        <p>Naš Make Up Shop nudi širok asortiman proizvoda za šminkanje. Bilo da tražite savršen ruž ili podlogu, imamo sve što vam treba!</p>
-    </section>
-</div>
-    <hr>
-
-    <section id="products">
-        <h2>Proizvodi</h2>
-        <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownProducts" data-bs-toggle="dropdown" aria-expanded="false">
-                Pogledaj proizvode
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownProducts">
-                <li>
-                    <div class="product">
-                        <h3>Ruž za usne</h3>
-                        <p>Cijena: 39.90 KM</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="product">
-                        <h3>Puder</h3>
-                        <p>Cijena: 100 KM</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="product">
-                        <h3>Maskara</h3>
-                        <p>Cijena: 80 KM</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="product">
-                        <h3>Eyeliners</h3>
-                        <p>Cijena: 45 KM</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="product">
-                        <h3>Highlighter</h3>
-                        <p>Cijena: 60 KM</p>
-                    </div>
-                </li>
-            </ul>
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Make Up Shop</h1>
+            <p>For women who deserve the best. Our passion for make-up makes us leaders in the beauty industry.</p>
+            <a href="#contact" class="cta-button">Connect with us</a>
         </div>
-    </section>
+    </div>
 
-    <section id="testimonials">
-        <h2>Iskustva kupaca</h2>
-        <blockquote>
-            <p>"Najbolji proizvodi koje sam ikada koristila! Osjećam se prekrasno svaki put." - Ana K.</p>
-        </blockquote>
-        <blockquote>
-            <p>"Brza dostava i odlična usluga. Preporučujem svima!" - Marko P.</p>
-        </blockquote>
-    </section>
 
-    <hr>
 
-    <section id="newsletter">
-        <h2>Prijavite se za Newsletter</h2>
-        <p>Budite u toku s našim najnovijim proizvodima i promocijama. Prijavite se sada!</p>
-        <form action="#" method="post">
-            <label for="email">Vaša e-mail adresa:</label>
-            <input type="email" id="email" name="email" required>
-            <button type="submit">Prijavite se</button>
-        </form>
-    </section>
-
-    <hr>
-
-    <section id="contact">
-        <h2>Kontakt</h2>
-        <p>Za više informacija, kontaktirajte nas na: <a href="mailto:info@makeupshop.com">info@makeupshop.com</a></p>
-    </section>
-    
     <footer class="bg-dark text-white py-3 mt-5">
         <div class="container text-center">
-            <p>&copy; 2024 Make Up Shop. Sva prava zadržana.</p>
+            <p>&copy; 2024 Make Up Shop. All rights reserved.</p>
         </div>
     </footer>
+
+    <style>
+      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+     
+        .hero-section {
+            height: 100vh;
+            background-image: url('hero-image.jpg'); /* Zamijeni s vlastitom slikom */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            background-attachment: fixed;
+        }
+
+        .hero-content {
+            z-index: 1;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 72px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero-content p {
+            font-size: 24px;
+            margin-bottom: 30px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .cta-button {
+            padding: 15px 30px;
+            background-color: #D56C9F;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            animation: fadeIn 4s ease-in-out;
+        }
+
+        .cta-button:hover {
+            background-color: #B3567F;
+        }
+
+      
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #D56C9F;
+        }
+
+      
+        footer {
+            background-color: #1c1c1c;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer .social-media {
+            margin: 20px 0;
+        }
+
+        footer .social-media a {
+            color: white;
+            font-size: 28px;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer .social-media a:hover {
+            color: #D56C9F;
+        }
+
+        footer p {
+            font-size: 16px;
+            color: #777;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 48px;
+            }
+
+            .hero-content p {
+                font-size: 18px;
+            }
+
+            .cta-button {
+                font-size: 16px;
+                padding: 12px 25px;
+            }
+        }
+    </style>
+</head>
 
 
 </body>

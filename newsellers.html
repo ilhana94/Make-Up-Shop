@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Up Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class=" text-white py-4">
+        <div class="container"></div>
+    
+        <a href="index.html">
+            <h1>Make Up Shop</h1>
+            </a>
+     
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="customerexperince.html">Customer Experience</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="newsellers.html">Newsletter</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+            </ul>
+        </nav>
+    </header>
+   
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f5f5f5;
+                color: #333;
+            }
+            header {
+                background-color: #1c1c1c;
+                color: #fff;
+                text-align: center;
+                padding: 2rem;
+            }
+            .newsletter-container {
+                background-color: #D56C9F; /* Elegantna ružičasta */
+                color: white;
+                padding: 3rem 2rem;
+                text-align: center;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                margin: 2rem auto;
+                max-width: 800px;
+            }
+            .newsletter-container h2 {
+                font-size: 28px;
+                margin-bottom: 1rem;
+                font-weight: bold;
+            }
+            .newsletter-container p {
+                font-size: 16px;
+                margin-bottom: 2rem;
+            }
+            .newsletter-form {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+            }
+            .newsletter-form input[type="email"] {
+                padding: 12px;
+                font-size: 16px;
+                border-radius: 5px;
+                border: none;
+                width: 60%;
+                max-width: 400px;
+                margin-right: 1rem;
+            }
+            .newsletter-form button {
+                background-color: #fff;
+                color: #D56C9F; /* Zlatno-ružičasta za dugme */
+                font-size: 16px;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+            .newsletter-form button:hover {
+                background-color: #f1f1f1;
+            }
+            .footer-note {
+                font-size: 12px;
+                color: #f1f1f1;
+                margin-top: 1rem;
+            }
+        </style>
+    </head>
+    <body>
+       
+        <div class="newsletter-container">
+            <h2>Stay up to date with the latest trends in makeup!</h2>
+            <p>Sign up for our newsletter and be the first to find out about new products, promotions and exclusive discounts.</p>
+    
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" id="email" required>
+                <button onclick="subscribe()">Sign up</button>
+            </div>
+    
+            <p class="footer-note">Your privacy is important to us. We never share your information with third parties.</p>
+        </div>
+    
+        <script>
+            function subscribe() {
+                const email = document.getElementById('email').value;
+                if (email) {
+                    alert(`Thank you for signing up for our newsletter! E-mail: ${email}`);
+                
+                } else {
+                    alert("Please enter a valid email address.");
+                }
+            }
+        </script>
+    </body>
+    </html>
+    
+
+
+
+<footer class="bg-dark text-white py-3 mt-5">
+    <div class="container text-center">
+        <p>&copy; 2024 Make Up Shop. All rights reserved.</p>
+    </div>
+</footer>
